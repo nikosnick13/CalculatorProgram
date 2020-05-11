@@ -6,9 +6,11 @@ namespace Calculator_Program
     {
         static void Main(string[] args)
         {
-
+            
 
             Console.WriteLine("Hello Wellcome to the calculator");
+            rep:
+
             Console.WriteLine("press 1 for addition");
             Console.WriteLine("press 2 for subtraction");
             Console.WriteLine("press 3 for multiplication");
@@ -39,11 +41,15 @@ namespace Calculator_Program
             else
             {
                 Console.WriteLine("Press 1 of 4 button");
+                Console.WriteLine();
+                Console.WriteLine("--------------------------------------------------------------------------------------------------------");
             }
 
-
+            
 
             Console.ReadLine();
+
+            goto rep;
         }
 
         static void OperationAddition()
@@ -56,6 +62,9 @@ namespace Calculator_Program
             double num2 = Convert.ToDouble(Console.ReadLine());
             double sum = num1 + num2;
             Console.WriteLine("The " + num1 + " addition with " + num2 + " and the answer is : " + sum);
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------");
+
         }
 
         static void OperationSubtraction()
@@ -67,6 +76,8 @@ namespace Calculator_Program
             double num2 = Convert.ToDouble(Console.ReadLine());
             double sum = num1 - num2;
             Console.WriteLine("The " + num1 + " subtaction with " + num2 + " and the answer is : " + sum);
+            Console.WriteLine();
+            Console.WriteLine("------------------------------------------------------------------------------------------------------------");
         }
         static void OperationMultiplicationn()
         {
@@ -78,6 +89,8 @@ namespace Calculator_Program
             double num2 = Convert.ToDouble(Console.ReadLine());
             double sum = num1 * num2;
             Console.WriteLine("The " + num1 + " munltiplication with " + num2 + " and the answer is : " + sum);
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
         }
 
         static void OperationDivision()
@@ -89,6 +102,8 @@ namespace Calculator_Program
             double num2 = Convert.ToDouble(Console.ReadLine());
             double sum = num1 / num2;
             Console.WriteLine("The " + num1 + " division with " + num2 + " and the answer is : " + sum);
+            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
         }
 
     }
